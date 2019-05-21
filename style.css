@@ -1,0 +1,105 @@
+body {
+      width: 760px; /* Feste body grösse */
+      margin-left: auto; /* body zentriert */
+      margin-right: auto; /* body zentriert */
+      font-family: "Calibri", "Helvetica", sans-serif; /* Schriftarten die Ausgewählt werden */
+
+    }
+    #inhalt {
+      background-color: white; /* Hintergrundfarbe des Inhalts der Webseite (unter dem navibereich)*/
+      min-height: 500px; /* Mindesthöhe für Inhalt */
+      padding: 10px; /* links rechts oben und unten hat es 10 Pixel abstand zwischen dem inhalt und dem rand */
+      border: solid black; /* Rand um den Inhalt herum  */
+      border-radius: 5px; /* Die Ecken des  div blocks inhalt werden ein bischen abgerundet */
+    }
+    header {
+      width: auto; /* übernimmt die grösse des bodys*/
+      height: 30px; /* feste höhe des headers */
+      border: solid black; /* rand des Headers */
+      font-size: 20px; /* grösse des Header-Textes */
+      text-align: center; /* Header Text zentriert */
+      letter-spacing: 10px; /* Abstand zwischen den Buchstaben */
+      padding-top: 5px; /* Abstand vom Text zum oberen Rand des Headers */
+      border-radius: 20px; /* Abgerundete Header Ecken */
+      margin-bottom: 5px; /*Abstand des Headers zum Nav*/
+    }
+    nav {
+      width: 760px; /* nav bereich feste grösse */
+      height:50px; /* höhe navibereich */
+
+    }
+    footer {
+      background-color: #333; /* Hintergrundfarbe des Footers*/
+      border-radius: 5px; /* Abgerundete Ecken des Footers */
+      width: 760px; /* Feste Breite */
+      height: 30px; /* Feste Höhe */
+      margin-top: 5px; /* Abstand zwischen dem footer und dem Inhalt (oben) */
+      text-align: center; /* text wird zentriert */
+      padding-top: 8px; /* abstand zwischen text und oberem rand */
+      color: white; /* Schriftfarbe */
+      font-size: 80%; /* Schriftgrösse im footer ist um 20% kleiner als im rest */
+
+
+    }
+    hr {
+      border: solid black 1px; /* die horizontale linie wird ein bisschen dicker */
+    }
+    ul {
+        list-style-type: none; /* ul also unordned list wird nicht mehr aufgelistet also keine Punkte mehr vorhanden*/
+        margin: 0; /* Abstand um nav bereich herum */
+        padding: 0; /* Abstand zwischen den Wörtern und dem Rand*/
+        overflow: hidden; /* schliesst die Lücke zwischen "Hobbys" und "Impressum"*/
+        background-color: #333; /*  Hintergrundfarbe des nav bereichs */
+        width: 760px; /* feste grösse des nav bereichs */
+        border-radius: 5px; /* Die Ecken des Nav bereichs sind leicht abgerundet */
+
+      }
+
+    li {
+        float: left; /* li elemente werden links ausgerichtet*/
+    }
+
+    li a {
+        display: block; /* wird als block dargestellt */
+        color: white; /* Schriftfarbe wird weiss */
+        text-align: center; /* Text wird zentriert */
+        background-color: #333;  /* hintergrund des dropdown content */
+        padding: 14px 16px; /* abstand zwischen text und objekt rändern */
+        text-decoration: none; /* Hyperlinks im nav sind nicht mehr unterstrichen */
+    }
+
+    li a:hover:not(.Home) /* Beim darüberfahren mit der Maus wird alles ausser .Home verändert  */
+    {
+        background-color: #827978;
+    }
+
+   .Home {
+        background-color: #B02C15; /* Hintergrund von Home im nav bereich */
+    }
+
+
+
+    .dropdown:hover .dropdown-content /* inhalt des dropdown wird beim drüberfahren angezeigt */{
+        display: block;
+    }
+
+    .dropdown-content /* versteckt dropdown menü wenn maus nicht darüber ist */
+    {
+      display: none;
+      position: absolute;
+    }
+
+  #impressum{
+    float: right; /* damit dieser Punkt im nav menü rechts statt links ist */
+  }
+
+  #Titel{
+    margin-top: 0px; /* Oben beim Inhalt hat es sonst standard mässig einen Abstand, den ich nicht will.*/
+  }
+
+  }
+  .Hobbys { /* die verlinkungen unten bei den hobbys */
+    padding: 5px; /* abstand zwischen text und objektrand */
+    border: solid black; /* rand um objekt */
+    background-color: white; /* hintergrundfarbe */
+  }
